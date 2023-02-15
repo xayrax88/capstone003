@@ -12,12 +12,12 @@ import {
 } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDM4w_TDAOd9X4m-HsvdPyigLYOlIZ_870",
-  authDomain: "memoria-8bc4b.firebaseapp.com",
-  projectId: "memoria-8bc4b",
-  storageBucket: "memoria-8bc4b.appspot.com",
-  messagingSenderId: "712038023193",
-  appId: "1:712038023193:web:447aa045e42843ad11aa88"
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
 };
 
 
