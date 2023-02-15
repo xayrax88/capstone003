@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?4cjdhq");
+  src: url("fonts/icomoon.eot?4cjdhq#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?4cjdhq") format("truetype"),
+    url("fonts/icomoon.woff?4cjdhq") format("woff"),
+    url("fonts/icomoon.svg?4cjdhq#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icn-chat:before {
+  content: "\e900";
+  color: #717171;
+}
+.icon-icn-profile:before {
+  content: "\e901";
+  color: #717171;
+}
+.icon-icn-add:before {
+  content: "\e902";
+  color: #8c8c8c;
+}
+.icon-icn-edit-button:before {
+  content: "\e903";
+  color: #a7a7a7;
+}
+.icon-icn-edit:before {
+  content: "\e904";
+  color: #a7a7a7;
+}
+.icon-icn-more:before {
+  content: "\e905";
+  color: #717171;
+}
+.icon-icn-right-chevron:before {
+  content: "\e906";
+  color: #a7a7a7;
+}
+.icon-icn-subnav-company:before {
+  content: "\e907";
+  color: #a7a7a7;
+}
+.icon-icn-subnav-overview:before {
+  content: "\e908";
+  color: #a7a7a7;
+}
+.icon-icn-subnav-stages-2 .path1:before {
+  content: "\e909";
+  color: rgb(255, 255, 255);
+}
+.icon-icn-subnav-stages-2 .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(245, 247, 250);
+}
+.icon-icn-subnav-stages-2 .path3:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-icn-subnav-stages-2 .path4:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(29, 111, 152);
+}
+.icon-icn-subnav-tasks .path1:before {
+  content: "\e90d";
+  color: rgb(194, 194, 194);
+}
+.icon-icn-subnav-tasks .path2:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-icn-subnav-tasks .path3:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(167, 167, 167);
+}
+.icon-icn-table-timer:before {
+  content: "\e910";
+  color: #a7a7a7;
+}
+.icon-icn-table-sub-task:before {
+  content: "\e911";
+  color: #8c8c8c;
+}
+.icon-icn-form-move:before {
+  content: "\e912";
+  color: #c2c2c2;
+}
+.icon-icn-export-button:before {
+  content: "\e913";
+  color: #c2c2c2;
+}
+.icon-icn-checkbox-button:before {
+  content: "\e914";
+  color: #a7a7a7;
+}
+.icon-icn-checkbox-enabled:before {
+  content: "\e915";
+  color: #9aa5b1;
+}
+.icon-icn-subnav-documents:before {
+  content: "\e916";
+  color: #1d6f98;
+}
+.icon-icn-calendar:before {
+  content: "\e917";
+  color: #9aa5b1;
+}
+.icon-on-track .path1:before {
+  content: "\e918";
+  color: rgb(227, 249, 229);
+}
+.icon-on-track .path2:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: rgb(63, 145, 66);
+}
+.icon-paused .path1:before {
+  content: "\e91a";
+  color: rgb(255, 243, 196);
+}
+.icon-paused .path2:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(203, 110, 23);
+}
+.icon-paused .path3:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(203, 110, 23);
+}
+.icon-removed .path1:before {
+  content: "\e91d";
+  color: rgb(255, 227, 227);
+}
+.icon-removed .path2:before {
+  content: "\e91e";
+  margin-left: -1em;
+  color: rgb(171, 9, 30);
+}
+.icon-icn-table-follow:before {
+  content: "\e91f";
+  color: #7b8794;
+}
+.icon-icn-table-message:before {
+  content: "\e920";
+  color: #7b8794;
+}
+.icon-icn-left-first:before {
+  content: "\e921";
+  color: #9aa5b1;
+}
+.icon-icn-left-prev:before {
+  content: "\e922";
+  color: #9aa5b1;
+}
+.icon-icn-right-last:before {
+  content: "\e923";
+  color: #2d83ae;
+}
+.icon-icn-right-next:before {
+  content: "\e924";
+  color: #2d83ae;
+}
+.icon-icn-subnav-ratings-fill:before {
+  content: "\e925";
+  color: #1d6f98;
+}
+.icon-icn-subnav-ratings:before {
+  content: "\e926";
+  color: #1d6f98;
+}
+.icon-icn-button-delete:before {
+  content: "\e927";
+  color: #e12d39;
+}
+.icon-hamburger:before {
+  content: "\e928";
+}
+.icon-icn-view-card:before {
+  content: "\e929";
+  color: #7b8794;
+}
+.icon-icn-view-list:before {
+  content: "\e92a";
+  color: #cbd2d9;
+}
+.icon-icn-view-map:before {
+  content: "\e92b";
+  color: #cbd2d9;
+}
+.icon-icn-table-down-chevron:before {
+  content: "\e92c";
+  color: #9aa5b1;
+}
+.icon-price-tag:before {
+  content: "\e935";
+}

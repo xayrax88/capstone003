@@ -1,0 +1,62 @@
+@import "../style.scss";
+
+.multiWrp {
+  width: 100%;
+  min-height: 55px;
+
+  .container {
+    border: 1px solid $border-color;
+
+    &.error {
+      border: 1px solid $error-color;
+    }
+
+    .dorpWrp {
+      width: 100%;
+      border: none;
+
+      & > div {
+        max-height: 62px;
+        overflow-y: auto;
+      }
+    }
+  }
+
+  .multifunc {
+    @include flx("vt", "row");
+    cursor: pointer;
+    color: $button-color;
+
+    & > div {
+      margin: 5px 15px 0 0;
+
+      &:hover {
+        color: $button-color-hover;
+      }
+
+      &:active {
+        color: $button-color-active;
+      }
+    }
+  }
+
+  .errorMsg {
+    float: right;
+    margin-left: auto;
+    color: $error-color;
+  }
+
+  .loadMore {
+    color: $button-color;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 3px 0;
+    background: white;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

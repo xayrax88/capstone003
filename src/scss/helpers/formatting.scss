@@ -1,0 +1,65 @@
+@mixin flx($align: null, $direction: null) {
+  display: flex;
+  @if ($direction == "col") {
+    flex-direction: column;
+    @if ($align == "vt") {
+      justify-content: center;
+    }
+    @if ($align == "hz") {
+      align-items: center;
+    }
+    @if ($align == "top") {
+      align-self: flex-start;
+    }
+  } @else if ($direction == "row") {
+    flex-direction: row;
+    @if ($align == "vt") {
+      align-items: center;
+    }
+    @if ($align == "hz") {
+      justify-content: center;
+    }
+    @if ($align == "top") {
+      align-items: flex-start;
+    }
+    @if ($align == "btm") {
+      align-items: flex-end;
+    }
+  } @else if ($align == "center") {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@mixin gridHeader($bgColor) {
+  @include flx("vt", "row");
+  @include line-row("btm");
+  height: 48px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "lato-bold";
+  color: $header-font-color;
+  @if ($bgColor != null) {
+    background-color: $bgColor;
+  }
+}
+@mixin tableGrid {
+  overflow-x: auto;
+}
+
+@mixin gridRow() {
+  @include flx("vt", "row");
+  @include line-row("btm");
+}
+
+@mixin gridCol($width, $align: "left") {
+  width: $width;
+  box-sizing: border-box;
+  padding: 0 3px;
+  display: inline-table;
+  @if ($align == "center") {
+    text-align: center;
+  } @else {
+    text-align: left;
+  }
+}

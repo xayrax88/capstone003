@@ -1,0 +1,77 @@
+@mixin icon-linked {
+  background-image: url("../assets/icn-linked-in.png");
+  background-repeat: no-repeat;
+}
+
+@mixin icon-tweet {
+  background-image: url("../assets/twitter-logo-blue.png");
+  background-repeat: no-repeat;
+}
+
+@mixin icon-research {
+  background-image: url("../assets/gfx-company@2x.png");
+  background-repeat: no-repeat;
+}
+@mixin icon-collaborate {
+  background-image: url("../assets/gfx-collaborate@2x.png");
+  background-repeat: no-repeat;
+}
+@mixin icon-evaluate {
+  background-image: url("../assets/gfx-project@2x.png");
+  background-repeat: no-repeat;
+}
+
+@mixin icon-Starfill {
+  background-image: url("../assets/icn-subnav-ratings-fill@2x.png");
+  background-repeat: no-repeat;
+}
+
+@mixin icon-StarEmpty {
+  background-image: url("../assets/icn-subnav-ratings@2x.png");
+  background-repeat: no-repeat;
+}
+
+@mixin icon-loading {
+  background-image: url("../assets/loading3.gif");
+  background-repeat: no-repeat;
+}
+
+@mixin icon-hamburger {
+  background-image: url("../assets/hambuger.png");
+  background-repeat: no-repeat;
+}
+
+@mixin bg-image1 {
+  background-image: url("../assets/background.png");
+  background-repeat: no-repeat;
+}
+@mixin bg-image2 {
+  background-image: url("../assets/background1.jpg");
+  background-repeat: no-repeat;
+}
+@mixin bg-image3 {
+  background-image: url("../assets/background2.jpg");
+  background-repeat: no-repeat;
+}
+@mixin bg-image4 {
+  background-image: url("../assets/background3.jpg");
+  background-repeat: no-repeat;
+}
+@mixin bg-image5 {
+  background-image: url("../assets/background4.jpg");
+  background-repeat: no-repeat;
+}
+@mixin bg-image6 {
+  background-image: url("../assets/background5.jpg");
+  background-repeat: no-repeat;
+}
+
+@mixin marker {
+  background-image: url("../assets/maker.svg");
+  background-repeat: no-repeat;
+}
+
+@mixin logo {
+  background-image: url("../assets/logo.svg");
+  background-repeat: no-repeat;
+}

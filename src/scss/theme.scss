@@ -1,0 +1,90 @@
+@import "./theme-variables.scss";
+
+@mixin page-title {
+  font-size: $page-fontsize;
+}
+
+@mixin page-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@mixin content-block {
+  border: 1px solid $border-color;
+  border-radius: 5px;
+}
+
+@mixin label {
+  color: $font-color;
+}
+
+@mixin sub-navi {
+  font-size: 14px;
+  color: $header-active;
+}
+
+@mixin body-icon {
+  color: $icon-color;
+  fill: $icon-color;
+  &:hover {
+    color: $icon-color-hover;
+    fill: $icon-color-hover;
+  }
+  &:active {
+    color: $icon-color-active;
+    fill: $icon-color-active;
+  }
+}
+@mixin disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+
+@mixin line-row($side) {
+  @if ($side == "top") {
+    border-top: 1px solid $border-color;
+  }
+  @if ($side == "btm") {
+    border-bottom: 1px solid $border-color;
+  }
+  @if ($side == "all") {
+    border: 1px solid $border-color;
+  }
+  padding: 16px 0;
+}
+
+@mixin selected() {
+  background-color: $selected-bg-color;
+}
+@mixin clacmin($property, $main, $sub) {
+  #{$property}: calc(#{$main} - #{$sub});
+}
+@mixin clacplus($property, $main, $sub) {
+  #{$property}: calc(#{$main} + #{$sub});
+}
+
+@mixin rotate($val) {
+  -webkit-transform: rotate(#{$val}deg);
+  -ms-transform: rotate(#{$val}deg);
+  transform: rotate(#{$val}deg);
+}
+
+@mixin singleRowTextWithDots() {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin skipLogo() {
+  margin-left: 152px;
+  @media (max-width: $media-mobile) {
+    margin-left: 0;
+  }
+}
+
+@mixin light-panel() {
+  box-shadow: 0 1px 3px 0 rgba(27, 36, 50, 0.15);
+  border: 1px solid $border-color;
+  background-color: $container-bg-light-color;
+  border-radius: 8px;
+}
