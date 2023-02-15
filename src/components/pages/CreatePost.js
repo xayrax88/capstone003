@@ -54,7 +54,7 @@ function CreatePost() {
                         }}
                     />
                 </div>
-            </>
+            </div>
             <div className={styles.empty}></div>
             <Button onClick={createPost} variant='contained'> Submit Post</Button>
 
