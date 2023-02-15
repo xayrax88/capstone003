@@ -1,0 +1,28 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.titleText {
+  font-size: large;
+  margin: 2rem;
+}
+
+.desText {
+  font-size: large;
+  margin: 2rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.empty
+{
+  margin-bottom: 4rem;
+}
