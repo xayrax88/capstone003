@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 import React from 'react';
 import '../App.scss';
@@ -25,27 +23,6 @@ export default function Hsection() {
                 </Button>
 
             </div>
-=======
-import React from 'react'
-
-function HSection() {
-    return (
-        <div className='h-container'>
-            <video src="/videos/video-2.mp4"></video>
->>>>>>> parent of 1143e49 (firebase auth & database added)
         </div>
-    )
+    );
 }
-=======
-import React from 'react'
-
-function HSection() {
-    return (
-        <div className='h-container'>
-            <video src="/videos/video-2.mp4"></video>
-        </div>
-    )
-}
-
-export default Hsection;
->>>>>>> parent of 1143e49 (firebase auth & database added)
