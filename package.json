@@ -9,12 +9,16 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "react-firebase-hooks": "^5.1.1",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
     "sass": "^1.58.0",
     "sass-loader": "^13.2.0",
     "uid": "^2.0.1",
+=======
+    "react-scripts": "^5.0.1",
+>>>>>>> parent of 1143e49 (firebase auth & database added)
 =======
     "react-scripts": "^5.0.1",
 >>>>>>> parent of 1143e49 (firebase auth & database added)
