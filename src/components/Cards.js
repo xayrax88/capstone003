@@ -10,7 +10,7 @@ export default function Cards() {
                 <div className='cards__wrapper'>
                     <ul className='cards__items'>
                         <CardItem
-                            img src={'./images/img-1.png'}
+                            img src={'./images/img-2.png'}
                             text='Writing down your thoughts once a day can help you gain control of your emotions.'
                         // path='/'
                         />
