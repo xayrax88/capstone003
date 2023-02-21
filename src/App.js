@@ -8,7 +8,7 @@ import SignUp from './components/pages/SignUp';
 import CreatePost from './components/pages/CreatePost';
 import Footer from './components/Footer';
 import Dashboard from './components/pages/Dashboard';
-import UpdatePost from './components/pages/UpdatePost';
+import EditPost from './components/pages/EditPost';
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/sign-up" element={<SignUp />} />
           <Route exact path="/createpost" element={<CreatePost />} />
-          <Route exact path="/updatepost" element={<UpdatePost />} />
+          <Route exact path="/editpost" element={<EditPost />} />
           <Route exact path="/dashboard" element={<Dashboard />} />
           <Route path="/*" element={<Home />} />
         </Routes>

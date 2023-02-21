@@ -1,65 +1,47 @@
-import React, { useState } from "react";
-import { addDoc, collection } from "firebase/firestore";
-import { db, auth } from "../../Firebase/Firebase";
-import { useNavigate } from "react-router-dom";
-import styles from './createPost.module.scss'
-import { Button } from "@mui/material";
-import { uid } from 'uid'
+import Modal from "./Modal"
+import { useState } from 'react'
+import './createPost.module.scss'
+import { db } from '../../Firebase/Firebase'
+import { collection, addDoc, Timestamp } from 'firebase/firestore'
 
-function CreatePost() {
-  const [title, setTitle] = useState("");
-  const [postText, setPostText] = useState("");
+function CreatePost({ onClose, open }) {
 
-  const postsCollectionRef = collection(db, "posts");
-  let navigate = useNavigate();
+  const [title, setTitle] = useState('')
+  const [description, setDescription] = useState('')
 
-  const createPost = async () => {
-    if (!(title && postText)) {
-      alert("Please provide values")
-      return
+  /* function to add new post to firestore */
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    try {
+      await addDoc(collection(db, 'posts'), {
+        title: title,
+        description: description,
+        completed: false,
+        created: Timestamp.now()
+      })
+      onClose()
+    } catch (err) {
+      alert(err)
     }
-
-    const _id = uid();
-
-    await addDoc(postsCollectionRef, {
-      _id,
-      title,
-      postText,
-      author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
-    });
-    navigate("/dashboard");
-  };
+  }
 
   return (
-    <div className={styles.container}>
-      <h1 >Create A Post</h1>
-      <div className={styles.empty}></div>
-      <div className="inputGp">
-        <label className={styles.titleText}> Title</label>
+    <Modal modalLable='Create Post' onClose={onClose} open={open}>
+      <form onSubmit={handleSubmit} className='createPost' name='createPost'>
         <input
-          placeholder="Title..."
-          onChange={(event) => {
-            setTitle(event.target.value);
-          }}
-        />
-      </div>
-
-      <div>
-        <div className="inputGp">
-          <label className={styles.desText}> Description</label>
-          <textarea
-            placeholder="Post..."
-            onChange={(event) => {
-              setPostText(event.target.value);
-            }}
-          />
-        </div>
-      </div>
-      <div className={styles.empty}></div>
-      <Button onClick={createPost} variant='contained'> Submit Post</Button>
-
-    </div>
-  );
+          type='text'
+          name='title'
+          onChange={(e) => setTitle(e.target.value.toUpperCase())}
+          value={title}
+          placeholder='Enter title' />
+        <textarea
+          onChange={(e) => setDescription(e.target.value)}
+          placeholder='Enter post description'
+          value={description}></textarea>
+        <button type='submit'>Done</button>
+      </form>
+    </Modal>
+  )
 }
 
 export default CreatePost;
