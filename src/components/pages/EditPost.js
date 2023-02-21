@@ -2,7 +2,7 @@
 import Modal from "./Modal"
 import React, { useState } from "react";
 import { db } from "../../Firebase/Firebase";
-import './editPost.modules.scss'
+import './editPost.module.scss'
 
 import { doc, updateDoc } from "firebase/firestore";
 

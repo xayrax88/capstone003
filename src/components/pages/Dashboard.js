@@ -1,14 +1,27 @@
 import "./Dashboard.scss";
 import Post from './Post';
 import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { useNavigate } from "react-router-dom";
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
-import { db } from "../../Firebase/Firebase";
 import CreatePost from './CreatePost';
+import { db, auth } from "../../Firebase/Firebase";
+
 
 function Dashboard() {
+  const [user] = useAuthState(auth);
 
   const [openAddModal, setOpenAddModal] = useState(false)
   const [posts, setPosts] = useState([])
+
+
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (!user) { navigate("/login") }
+  }, [user]);
+
+
+
 
   /* function to get all posts from firestore in realtime */
   useEffect(() => {
