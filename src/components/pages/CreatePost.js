@@ -33,18 +33,24 @@ function CreatePost({ onClose, open }) {
   return (
     <Modal modalLable='Create Post' onClose={onClose} open={open}>
       <form onSubmit={handleSubmit} className='createPost' name='createPost'>
-        <input
-          type='text'
-          name='title'
-          onChange={(e) => setTitle(e.target.value.toUpperCase())}
-          value={title}
-          placeholder='Enter title' />
-
-        <textarea
-          onChange={(e) => setDescription(e.target.value)}
-          placeholder='Enter post description'
-          value={description}></textarea>
-        <MDBBtn className="submit-btn" size='sm' type='submit' color='dark'>Submit</MDBBtn>
+        <div className="input-title">
+          <input
+            type='text'
+            name='title'
+            onChange={(e) => setTitle(e.target.value.toUpperCase())}
+            value={title}
+            placeholder='Enter title' />
+        </div>
+        <div className="text-box">
+          <textarea
+            onChange={(e) => setDescription(e.target.value)}
+            placeholder='Enter post description'
+            value={description}>
+          </textarea>
+        </div>
+        <div className="submit-btn">
+          <MDBBtn size='sm' type='submit' color='dark'>Submit</MDBBtn>
+        </div>
       </form>
     </Modal>
   )

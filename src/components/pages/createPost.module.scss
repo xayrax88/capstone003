@@ -6,6 +6,7 @@
   z-index: 100;
 }
 
+
 .createPost input {
   height: 40px;
   border: unset;
@@ -46,11 +47,23 @@
 .createPost button:active {
   background-color: hsl(210, 12%, 15%);
 }
+// .submit-btn {
+//   // background-color: hsl(210, 70%, 60%);
+//   padding: 5px 10px;
+//   font-size: 16px;
+//   border: none;
+//   border-radius: 4px;
+//   color: white;
+// }
+
+.input-title {
+  display: block;
+}
+.text-box {
+  display: block;
+  margin-top: .5rem;
+}
+
 .submit-btn {
-  background-color: hsl(210, 70%, 60%);
-  padding: 5px 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  color: white;
+  display: block;
 }
