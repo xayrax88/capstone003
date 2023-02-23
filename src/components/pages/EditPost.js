@@ -3,8 +3,8 @@ import Modal from "./Modal"
 import React, { useState } from "react";
 import { db } from "../../Firebase/Firebase";
 import './editPost.module.scss'
-
 import { doc, updateDoc } from "firebase/firestore";
+import { MDBBtn } from 'mdb-react-ui-kit';
 
 function EditPost({ open, onClose, toEditTitle, toEditDescription, id }) {
 
@@ -32,7 +32,7 @@ function EditPost({ open, onClose, toEditTitle, toEditDescription, id }) {
             <form onSubmit={handleUpdate} className='editPost'>
                 <input type='text' name='title' onChange={(e) => setTitle(e.target.value.toUpperCase())} value={title} />
                 <textarea onChange={(e) => setDescription(e.target.value)} value={description}></textarea>
-                <button type='submit'>Edit</button>
+                <MDBBtn size='sm' type='submit' color='dark'>Edit</MDBBtn>
             </form>
         </Modal>
     )

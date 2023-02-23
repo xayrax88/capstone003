@@ -4,6 +4,8 @@ import PostItem from './PostItem' //"TaskItem"
 import EditPost from './EditPost' //"EditTask"
 import { doc, updateDoc, deleteDoc } from "firebase/firestore";
 import { db } from '../../Firebase/Firebase'
+import Button from 'react-bootstrap/Button';
+import { MDBBtn } from 'mdb-react-ui-kit';
 
 function Post({ id, title, description, completed }) {
 
@@ -37,7 +39,7 @@ function Post({ id, title, description, completed }) {
     }
 
     return (
-        <div className={`task ${checked && 'task--borderColor'}`}>
+        <div className={`post ${checked && 'post--borderColor'}`}>
             <div>
                 <input
                     id={`checkbox-${id}`}
@@ -69,7 +71,6 @@ function Post({ id, title, description, completed }) {
                     </button>
                 </div>
             </div>
-
             {open.view &&
                 <PostItem
                     onClose={handleClose}

@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.scss';
+// import './App.scss';
 import Home from './components/pages/Home';
 import Navbar from './components/Navbar';
 import Login from './components/pages/Login';
 import SignUp from './components/pages/SignUp';
 import CreatePost from './components/pages/CreatePost';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import Dashboard from './components/pages/Dashboard';
 import EditPost from './components/pages/EditPost';
 
@@ -25,7 +25,7 @@ function App() {
           <Route exact path="/dashboard" element={<Dashboard />} />
           <Route path="/*" element={<Home />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
 
     </>

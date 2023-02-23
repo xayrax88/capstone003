@@ -3,7 +3,7 @@ import Post from './Post';
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
-import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
+import { collection, query, orderBy, onSnapshot, uid } from "firebase/firestore";
 import CreatePost from './CreatePost';
 import { db, auth } from "../../Firebase/Firebase";
 
@@ -37,14 +37,14 @@ function Dashboard() {
   }, [])
 
   return (
-    <div className='postManager'>
+    <div className='dashboard'>
       <header>Posts</header>
       <div className='dashboard__container'>
         <button
           onClick={() => setOpenAddModal(true)}>
           Create Post +
         </button>
-        <div className='postManager__posts'>
+        <div className='dashboard__posts'>
 
           {posts.map((post) => (
             <Post

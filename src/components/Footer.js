@@ -1,19 +1,24 @@
 import React from 'react';
-import './Footer.scss';
 import { Link } from 'react-router-dom';
+import { MDBFooter, MDBContainer } from 'mdb-react-ui-kit';
+import './Footer.scss'
 
-export default function Footer() {
+function Footer() {
     return (
-        <div className='footer-container'>
-            <div className='footer-wrap'>
-                <div className='footer-logo'>
-                    <Link to='/' className='footer-logo'>
-                        [M]EMORIA
-                        <i className='fa-solid fa-feather' />
-                    </Link>
+        <MDBFooter className='footer fixed-bottom'>
+
+            <MDBFooter className='footer-container text-center text-white' style={{ backgroundColor: '#21081a' }}>
+
+                <div className='footer-logo text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+
+                    <Link to='/'>[M]<i className='fa-solid fa-feather' /></Link> © 2023
+
                 </div>
-                <small className='website-rights'>[M]<i className='fa-solid fa-feather' /> © 2023</small>
-            </div>
-        </div>
+
+            </MDBFooter>
+
+        </MDBFooter>
     );
 }
+
+export default Footer;
